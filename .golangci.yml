@@ -10,6 +10,8 @@ linters-settings:
 linters:
   disable-all: true
   enable:
+    # Finds slice declarations that could potentially be pre-allocated
+    - prealloc
     - whitespace
     # unparam: Checks Go code for unused constants, variables, functions and types
     # - unparam  # todo: enabled
